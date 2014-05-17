@@ -12,15 +12,16 @@ int main()
 	printf("<tr>");
 	for (int y = 0; y<10; ++y){
 		for (int x = 0; x<10; ++x){
-			if (x == 0 || y == 0){
-				printf("<th>%d",x+y);
-			}
-			else if (x == 0 && y == 0){
+			if (x == 0 && y == 0){
 				printf("<th>");
+			}
+			else if (x == 0 || y == 0){
+				printf("<th>%d",x+y);
 			}
 			else{
 				printf("<th>%d", x*y);
 			}
+
 			if (x == 9){
 				printf("\n");
 			}
